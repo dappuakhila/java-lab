@@ -1,0 +1,30 @@
+package com.sample;
+class GP{
+	GP(){
+		//super();
+		System.out.println("gp class");
+	}
+		
+}
+class P extends GP{
+	P(){
+	super();
+	System.out.println("p class");
+	}
+}
+class C extends P{
+	C(){
+	super();
+	System.out.println("c class");
+}
+}
+public class MainSuperKeyword {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		C c1=new C();
+		
+
+	}
+
+}

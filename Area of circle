@@ -1,0 +1,18 @@
+package com.sample;
+
+public class Areaofcircle {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int radius=6;//in cm
+		double pie=3.14;
+		//double Areaofcircle=pie*(radius*radius);
+		double Areaofcircle=pie * Math.pow(radius, 2);
+		System.out.println("Radius:"+radius);
+		System.out.println("pie value:"+pie);
+		System.out.println("Area of Circle:"+Areaofcircle);
+		
+
+	}
+
+}

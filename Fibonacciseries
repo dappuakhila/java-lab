@@ -1,0 +1,22 @@
+package com.sample;
+
+public class Fibonacciseries {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		 int noofturns = 10;  // Number of terms to print
+
+	        int first = 0, second = 1;
+
+	        System.out.println("Fibonacci Series up to:"+noofturns);
+
+	        for (int i = 1; i <= noofturns; i++) {
+	            System.out.print(first + " ");
+
+	            int next = first + second;
+	            first = second;
+	            second = next;
+	        }
+	}
+
+}

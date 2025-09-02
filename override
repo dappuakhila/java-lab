@@ -1,0 +1,72 @@
+package com.sample;
+class RbiBank {
+
+	public double getRateOfInterset() {
+
+		return 5.0;
+
+	}
+
+}
+
+class SBI extends  RbiBank{
+
+	//@Override
+
+	public double getRateOfInterset(){
+		
+		return 6.5;
+
+	}
+	public void SBIspecialFeature() {
+		System.out.println("insurance");
+		
+	}
+
+}
+
+class ICICI extends RbiBank{
+
+	//@Override
+
+	public double getRateOfInterset(){
+
+		return 7.5;
+
+	}
+
+}
+
+
+
+public class Bank {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		RbiBank rb=new RbiBank();
+
+		RbiBank rb1=new SBI();
+
+		SBI sbi=new SBI();
+
+		ICICI ici=new ICICI();
+		
+		RbiBank rb2=new ICICI();
+		sbi.SBIspecialFeature();
+		
+
+		System.out.println("rbi rate of interest"+rb.getRateOfInterset());
+
+		System.out.println("SBI rate of interest"+sbi.getRateOfInterset());
+
+		System.out.println("ICICI rate of interest"+ici.getRateOfInterset());
+
+		System.out.println("rbi new rate of interest"+rb1.getRateOfInterset());
+		System.out.println("rbi new rate of interest"+rb2.getRateOfInterset());
+		//System.out.println("SBI new rate of interest"+sbi.SBIspecialFeature());
+
+
+
+	}
+
+}

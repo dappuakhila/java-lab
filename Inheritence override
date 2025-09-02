@@ -1,0 +1,49 @@
+package com.sample;
+
+class Vehicle {
+    String model;
+
+    Vehicle(String model) {
+        this.model = model;
+    }
+
+    void display(String prefix) {
+        System.out.println(prefix + "Model: " + model);
+    }
+}
+
+class Car extends Vehicle {
+    Car(String model) {
+        super(model);
+    }
+
+    //@Override
+    void display(String prefix) {
+        System.out.println(prefix + "Car: " + model);
+    }
+}
+
+class Bike extends Vehicle {
+    Bike(String model) {
+        super(model);
+    }
+
+   // @Override
+    void display(String prefix) {
+        System.out.println(prefix + "Bike: " + model);
+    }
+}
+
+public class InheritenceOverride {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Car car = new Car("Tesla Model S");
+        Bike bike = new Bike("Yamaha R15");
+
+        car.display("Check out this ");
+        bike.display("Check out this ");
+
+	}
+
+}
